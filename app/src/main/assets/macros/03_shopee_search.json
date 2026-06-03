@@ -1,0 +1,15 @@
+{
+  "id": "shopee_search",
+  "name": "Shopee: search a keyword",
+  "description": "Template: opens Shopee, taps the search box and types a keyword. Selectors (text/desc) WILL drift between app versions — adjust them after inspecting the live screen. Steps are marked optional so the macro degrades gracefully.",
+  "targetPackage": "com.shopee.id",
+  "steps": [
+    { "type": "launch_app", "packageName": "com.shopee.id" },
+    { "type": "wait", "durationMs": 6000 },
+    { "type": "click_desc", "description": "Search", "match": "contains", "optional": true },
+    { "type": "click_text", "text": "Search", "match": "contains", "optional": true },
+    { "type": "wait", "durationMs": 1500 },
+    { "type": "set_text", "viewId": "com.shopee.id:id/et_search_keyword", "text": "headphones", "optional": true },
+    { "type": "wait", "durationMs": 1000 }
+  ]
+}

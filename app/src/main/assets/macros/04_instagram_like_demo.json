@@ -1,0 +1,14 @@
+{
+  "id": "instagram_like_demo",
+  "name": "Instagram: open and like demo",
+  "description": "Template: opens Instagram, scrolls the home feed and taps a Like button by its content description. The accessibility label for Like may be localised (e.g. 'Suka') — change it to match your device language.",
+  "targetPackage": "com.instagram.android",
+  "steps": [
+    { "type": "launch_app", "packageName": "com.instagram.android" },
+    { "type": "wait", "durationMs": 6000 },
+    { "type": "scroll", "direction": "down", "durationMs": 300 },
+    { "type": "wait", "durationMs": 1500 },
+    { "type": "click_desc", "description": "Like", "match": "ignore_case", "optional": true },
+    { "type": "wait", "durationMs": 1000 }
+  ]
+}

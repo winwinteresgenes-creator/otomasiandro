@@ -1,0 +1,16 @@
+{
+  "id": "tiktok_autoscroll",
+  "name": "TikTok: auto-scroll feed",
+  "description": "Opens TikTok and swipes to the next video a few times. Video pixels can't be read (SurfaceView), so the feed is advanced with coordinate swipes, not node clicks.",
+  "targetPackage": "com.zhiliaoapp.musically",
+  "steps": [
+    { "type": "launch_app", "packageName": "com.zhiliaoapp.musically" },
+    { "type": "wait", "durationMs": 5000 },
+    { "type": "scroll", "direction": "up", "durationMs": 250 },
+    { "type": "wait", "durationMs": 4000 },
+    { "type": "scroll", "direction": "up", "durationMs": 250 },
+    { "type": "wait", "durationMs": 4000 },
+    { "type": "scroll", "direction": "up", "durationMs": 250 },
+    { "type": "wait", "durationMs": 4000 }
+  ]
+}

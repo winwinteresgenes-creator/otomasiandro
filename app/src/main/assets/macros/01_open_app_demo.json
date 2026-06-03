@@ -1,0 +1,13 @@
+{
+  "id": "open_app_demo",
+  "name": "Demo: open an app",
+  "description": "Minimal example — launches Settings and waits. Use it to confirm AutoPilot is wired up correctly.",
+  "targetPackage": "com.android.settings",
+  "steps": [
+    { "type": "launch_app", "packageName": "com.android.settings" },
+    { "type": "wait", "durationMs": 2000 },
+    { "type": "scroll", "direction": "down", "durationMs": 300 },
+    { "type": "wait", "durationMs": 1000 },
+    { "type": "home" }
+  ]
+}
