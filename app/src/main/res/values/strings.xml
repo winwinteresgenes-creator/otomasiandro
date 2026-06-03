@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AutoPilot</string>
+    <string name="accessibility_service_label">AutoPilot Automation</string>
+    <string name="accessibility_service_description">Lets AutoPilot read the current screen and tap, type, and swipe in other apps so it can run your automations. No data leaves the device.</string>
+
+    <string name="open_accessibility_settings">Open Accessibility settings</string>
+    <string name="stop_macro">Stop running macro</string>
+    <string name="macros_heading">Macros</string>
+    <string name="run_macro">Run</string>
+
+    <string name="status_connected">Service status: CONNECTED. Tap a macro to run it.</string>
+    <string name="status_disconnected">Service status: NOT ENABLED. Open Accessibility settings and turn on \"AutoPilot Automation\".</string>
+
+    <string name="no_macros">No macros found. Add .json files to the macros folder shown above, or ship them in assets/macros.</string>
+    <string name="enable_first">Enable the AutoPilot accessibility service first.</string>
+    <string name="running_macro">Running: %1$s</string>
+    <string name="stopped">Stopped.</string>
+
+    <string name="overlay_idle">AutoPilot</string>
+    <string name="overlay_stop">STOP</string>
+
+    <string name="macros_dir_hint">User macros folder:\n%1$s</string>
+</resources>
